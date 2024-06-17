@@ -1,6 +1,4 @@
-// const express = require('express');
 const mongoose = require('mongoose');
-// const app = express();
 
 mongoose.connect('mongodb://127.0.0.1/relation_db')
     .then((result) => {
@@ -58,7 +56,3 @@ const addAddress = async (id) => {
 };
 
 // addAddress('6670359b2495cab2b8cf965d');
-
-// app.listen(3000, () => {
-//     console.log('Server is running on port 3000');
-// });
