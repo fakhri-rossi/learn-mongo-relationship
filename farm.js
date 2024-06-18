@@ -73,3 +73,13 @@ const addProduct = async(id) => {
 // addProduct('6670410a5ff474d0c976c303');
 
 // makeFarm();
+
+// nampilin dat turunan relation one to many
+Farm.findOne({ name: "Rossi's Farm" }).populate('products')
+    .then((farm) => {
+        console.log(farm);
+
+    }).catch((err) => {
+        console.log(err);
+
+    });
